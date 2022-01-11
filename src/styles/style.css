@@ -1,0 +1,199 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-presentation {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.header-presentation div h1{
+    font-size: 1em;
+}
+
+.header-presentation div h2{
+    font-size: 0.8em;
+}
+
+.header-presentation img {
+    margin: 0 !important;
+    width: 100%;
+    max-width: 200px !important;
+}
+
+.align-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-images {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-images img {
+    width: 25%;
+}
+
+.animated-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.animated-repeat-swip {
+    margin-top: 10px;
+    animation: swipe-repeat 3s linear infinite;
+}
+
+.demTable {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    padding: 5px;
+    border: none;
+}
+
+.demTable th {
+    background: #131226 !important;
+    border: 1px solid #b3adad;
+    padding: 5px;
+    background: #f0f0f0;
+    color: #f2f2f2;
+    font-size: 22px !important;
+    text-align: center !important;
+    width: 80px !important;
+}
+
+.demTable thead tr th {
+    border: none !important;
+}
+
+.demTable th:first-child {
+    width: 100% !important;
+}
+
+.demTable tbody td {
+    font-size: 0.8em !important;
+    color: black !important;
+    text-align: center !important;
+}
+
+.demTable tbody td:first-child {
+    font-size: 0.8em !important;
+    color: black !important;
+    text-align: left !important;
+}
+
+.demTable td {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 5px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 0.8em !important;
+}
+
+.wrapper-graphics {
+    height: 80vh !important;
+}
+
+.demTable-2 tbody td{
+    font-size: 0.7em !important;
+}
+
+.demTable-2 tbody td:first-child{
+    font-size: 0.66em !important;
+}
+
+.demTable-2 th {
+    width: 130px !important;
+}
+
+.demTable-2 th:first-child {
+    width: 40% !important;
+}
+
+.demTable-2 tbody td:first-child{
+    font-size: 0.7em;
+}
+
+.wrapper-graphic {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+}
+
+.graphics {
+    margin: auto;
+    width: 95% !important;
+}
+
+@keyframes swipe-repeat {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.container-platforms {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.container-platforms .platform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.container-platforms .platform span {
+    font-size: 0.8em;
+}
+
+.container-platforms .platform img {
+    width: 120px;
+}
+
+@media (min-width: 768px) {
+    .demTable th {
+        font-size: 24px !important;
+    }
+
+    .demTable td {
+        font-size: 20px !important;
+    }
+
+    .demTable tbody td {
+        font-size: 20px !important;
+    }
+
+    .demTable tbody td:first-child {
+        font-size: 20px !important;
+    }
+
+    .demTable-2 th:first-child {
+        width: 50% !important;
+    }
+}
